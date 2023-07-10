@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div style="width:100%;">
+        <div class="col-md-12">
+            <div class="modal-header">
+                <h3 class="modal-title"><img class="img-rounded" src="icon/handbook.png" width="32" height="32" alt="">
+                    BMI <small>น้ำหนัก/ส่วนสูง</small></h3>
+            </div>
+
+
+            <div class="col-md-12 ">
+                <div class="form-group has-success">
+                    <label class="control-label" for="fname">ชื่อ</label>
+                    <div style="padding-left: 0px;">
+                        <div class="" style="padding-left: 0px;"><input type="text" id="name" class="form-control"
+                                name="name" placeholder="กรอกชื่อ"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="form-group input-weight has-success">
+                    <label class="control-label" for="weight">น้ำหนัก</label>
+                    <div style="padding-left: 0px;">
+                        <div class="input-group"><input  type="number" id="weight" class="form-control" name="weight"
+                                min="0" max="" placeholder="น้ำหนัก"><span class="input-group-addon">kg.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="form-group input-stature has-success">
+                    <label class="control-label" for="stature">ส่วนสูง</label>
+                    <div style="padding-left: 0px;">
+                        <div class="input-group"><input type="number" id="stature" class="form-control" name="stature"
+                                min="0" max="" placeholder="ส่วนสูง"><span class="input-group-addon">cm.</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 bgform-area " style="position: relative; ">
+                <div class="form-group input-bmi has-success">
+                    <label class="control-label" for="bsa">BMI</label>
+                    <div class="" style="padding-left: 0px;"><input type="number" id="bmiInput" class="form-control"
+                            name="bmi" min="0" max=""></div>
+                </div>
+            </div>
+            <div class="col-md-6 bgform-area " style="position: relative; ">
+                <div class="form-group input-bsa has-success">
+                    <label class="control-label" for="bsa">BSA</label>
+                    <div class="" style="padding-left: 0px;"><input type="number" id="bsa" class="form-control"
+                            name="bsa" min="0" max=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-header"></div>
+        <div class="modal-footer">
+            
+       <!-- <button type="submit" id="submitBmi" class="btn btn-primary btn-submit" name="submit">Submit</button>     -->
+       <button type="submit" class="calculate btn btn-primary"> Submit</button>
+       
+        </div>
+
+    </div>
+
+
+    <script src="main_sprint.js"></script>
+
+</body>
+</html>
