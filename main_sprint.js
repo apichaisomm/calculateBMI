@@ -67,13 +67,13 @@ function showBmi(){
     // bmi = 29.00
     if(bmi >= 30.00){
         results = 'อันตรายระดับ 2';
-    }else if (bmi >= 25.00 && bmi < 29.99){
+    }else if (bmi >= 25.00 && bmi < 30.00){
         results = 'อันตรายระดับ 1';
-    }else if(bmi >= 23.00 && bmi < 24.99){
+    }else if(bmi >= 23.00 && bmi < 25.00){
         results = 'น้ำหนักเกิน';
-    }else if(bmi >= 18.50 && bmi < 22.59){
+    }else if(bmi >= 18.50 && bmi < 23.00){
         results = 'อยู่ในเกณฑ์ปกติ';
-    }else if(bmi >= 0.00 && bmi < 18.50){
+    }else if(bmi >= 0.00 && bmi <= 18.50){
         results = 'อยู่ในเกณฑ์น้ำหนักน้อยหรือผอม';
     }else{
         results = 'error';
